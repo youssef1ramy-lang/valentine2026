@@ -1,113 +1,75 @@
 // Basic Information
+const config = {
+    valentineName: "Happy",
+    pageTitle: "Will You Be My Valentine? 💝",
 
-valentineName: "happy"                    // Your Valentine's name
-
-pageTitle: "Will You Be My Valentine? 💝" // Browser tab title
-
-
-
-// Floating Background Elements
-
-floatingEmojis: {
-
-    hearts: ['❤️', '💖', '💝', '💗', '💓'],  // Heart emojis in background
-
-    bears: ['🧸', '🐻']                       // Bear emojis in background
-
-}
-
-
-
-// Questions and Buttons
-
-questions: {
-
-    first: {
-
-        text: "Do you like me?",                   // First question
-
-        yesBtn: "Yes",                             // Yes button text
-
-        noBtn: "No",                               // No button text
-
-        secretAnswer: "I don't like you, I love you! ❤️"  // Hidden message
-
+    // Floating Background Elements
+    floatingEmojis: {
+        hearts: ['❤️', '💖', '💝', '💗', '💓'],
+        bears: ['🧸', '🐻']
     },
 
-    second: {
-
-        text: "How much do you love me?",          // Second question
-
-        startText: "This much!",                   // Text before percentage
-
-        nextBtn: "Next ❤️"                         // Next button text
-
+    // Questions and Buttons
+    questions: {
+        first: {
+            text: "Do you like me?",
+            yesBtn: "Yes",
+            noBtn: "No",
+            secretAnswer: "I don't like you, I love you! ❤️"
+        },
+        second: {
+            text: "How much do you love me?",
+            startText: "This much!",
+            nextBtn: "Next ❤️"
+        },
+        third: {
+            text: "Will you be my Valentine...?",
+            yesBtn: "Yes!",
+            noBtn: "No"
+        }
     },
 
-    third: {
+    // Love Meter Messages
+    loveMessages: {
+        extreme: "WOOOOW You love me that much?? 🥰🚀💝",
+        high: "To infinity and beyond! 🚀💝",
+        normal: "And beyond! 🥰"
+    },
 
-        text: "Will you be my Valentine...?",      // Final question
+    // Final Celebration
+    celebration: {
+        title: "Yay! I'm the luckiest person...",
+        message: "Now come get your gift...",
+        emojis: "🎁💖🤗💝💋❤️💕"
+    },
 
-        yesBtn: "Yes!",                            // Yes button text
+    // Website Colors
+    colors: {
+        backgroundStart: "#ffafbd",
+        backgroundEnd: "#ffc3a0",
+        buttonBackground: "#ff6b6b",
+        buttonHover: "#ff8787",
+        textColor: "#ff4757"
+    },
 
-        noBtn: "No"                                // No button text
+    // Animation Settings
+    animations: {
+        floatDuration: "15s",
+        floatDistance: "50px",
+        bounceSpeed: "0.5s",
+        heartExplosionSize: 1.5
+    },
 
+    // Music Settings
+    music: {
+        enabled: true,
+        autoplay: true,
+        musicUrl: "https://res.cloudinary.com/dn7jeryp3/video/upload/v1734165339/romantic-music.mp3", // I added a default romantic track for you!
+        startText: "🎵 Play Music",
+        stopText: "🔇 Stop Music",
+        volume: 0.5
     }
+};
 
-}
-
-
-
-// Love Meter Messages
-
-loveMessages: {
-
-    extreme: "WOOOOW You love me that much?? 🥰🚀💝",  // Shows above 5000%
-
-    high: "To infinity and beyond! 🚀💝",              // Shows above 1000%
-
-    normal: "And beyond! 🥰"                           // Shows above 100%
-
-}
-
-
-
-// Final Celebration
-
-celebration: {
-
-    title: "Yay! I'm the luckiest person...",     // Celebration title
-
-    message: "Now come get your gift...",          // Celebration message
-
-    emojis: "🎁💖🤗💝💋❤️💕"                        // Celebration emojis
-
-}
-
-
-
-// Website Colors
-
-colors: {
-
-    backgroundStart: "#ffafbd",      // Background gradient start
-
-    backgroundEnd: "#ffc3a0",        // Background gradient end
-
-    buttonBackground: "#ff6b6b",     // Button color
-
-    buttonHover: "#ff8787",          // Button hover color
-
-    textColor: "#ff4757"            // Text color
-
-}
-
-
-
-// Animation Settings
-
-animations: {
-
-    floatDuration: "15s",           // How long hearts float (10-20s)
-
-    floatDistance: "50px",          // Sideways movement
+// Export the config
+export default config;
